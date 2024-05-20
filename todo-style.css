@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    height: 100vh;
+    padding-left: 250px; /* Adjusted padding to move slightly to the left */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNLvTMUd_U-pGvczQMOVVkYV53KpZJCA0g2A&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Container */
+  .container {
+    background:#C4A484; /* Lavender color */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  /* Todo List */
+  .todo-list {
+    width: 100%;
+  }
+  
+  .todo-list__title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  /* Todo List Labels */
+  .todo-list__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #E6E6FA;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-list__label:hover {
+    background-color: #7fbf7f; /* Green color */
+  }
+  
+  .todo-list__label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-list__text {
+    font-size: 1em;
+    flex-grow: 1;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .todo-list__label.completed .todo-list__text {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .todo-list__delete {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .todo-list__delete:hover {
+    color: #c0392b;
+  }
+  
+  /* Add Task */
+  .add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .add-task input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-task input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .add-task button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    
